@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Activity</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <table border="1" >
+        <tr>
+          <td width="170px">Full Name*</td>
+          <td>
+            <label for="FirstName"></label>
+            <input
+              type="text"
+              name="firstname"
+              　
+              placeholder="First Name"
+              id="FirstName"
+            />
+            <label for="LastName"></label>
+            <input
+              type="text"
+              name="lastname"
+              　
+              placeholder="Last Name"
+              id="LastName"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Univercity*</td>
+          <td>
+            <label for="univercity"></label>
+            <select name="univercity" id="univercity">
+              <option value="" hidden>Select univercity</option>
+              <option value="Tokyo">Tokyo</option>
+              <option value="Koyto">Kyoto</option>
+              <option value="Nagoya">Nagoya</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>If Other- Please specify</td>
+          <td>
+            <label for="Univercity"></label>
+            <input type="text" name="Univercity" 　 />
+          </td>
+        </tr>
+        <tr>
+          <td>Faculty*</td>
+          <td>
+            <label for="faculty"></label>
+            <select name="faculty" id="faculty">
+              <option value="" hidden>Select faculty</option>
+              <option value="economy">department of economy</option>
+              <option value="education">department of educaton</option>
+              <option value="science">department of science</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>If Other- Please specify</td>
+          <td>
+            <label for="faculty"></label>
+            <input type="text" name="faculty" 　 />
+          </td>
+        </tr>
+        <tr>
+          <td>Academic year of PhD*</td>
+          <td>
+            <label for="year"></label>
+            <select name="year" id="year">
+              <option value="" hidden>Select Year</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Where would you like to work?</td>
+          <td>
+            <div>
+              <p></p>
+              <input type="checkbox" name="job" value="academia" />
+              <label for="academia">Academia</label>
+              <br />
+              <input type="checkbox" name="job" value="industry" />
+              <label for="">Industry</label>
+              <br />
+              <input type="checkbox" name="job" value="Consultancy" />
+              <label for="">Consultancy</label>
+              <br />
+              <input type="checkbox" name="job" value="Finance" />
+              <label for="">Finance</label>
+              <br />
+              <input type="checkbox" name="job" value="policy" />
+              <label for="">Policy/Government/NGO</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Email">E-mail</label>
+            <td>
+            <input
+              type="Email"
+              name="Email"
+              id="Email"
+              placeholder="ex:myname@example.com"
+            />
+            <br>
+             <input type="Email" name="Email" placeholder="Confirm Email" />
+          </td>
+          </td>
+        </tr>
+       
+        <tr>
+          <td>Would you like to sign up to newsletter?</td>
+          <td>
+            <div>
+              <input type="radio" name="signup" value="yes" />
+
+              <label for="Yes">Yes</label>
+              <br />
+
+              <input type="radio" name="signup" value="already" />
+              <label for="">No, I have already signed up</label>
+              <br />
+
+              <input type="radio" name="signup" value="no" />
+              <label for="No">No</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button type="submit">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

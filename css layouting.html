@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS layout</title>
+    <link rel="stylesheet" href="assets/styles/css-layouting.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="nav">
+      <h1><a href="#">cars</a></h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Vehicles</a></li>
+        <li><a href="#">Sales</a></li>
+        <li><a href="#">Resavaton</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <!-- <div class="outline">outline</div> -->
+    </div>
+
+    <!-- section -->
+    <div class="section">
+      <div class="section-text" id="toyota">
+        <h2>TOYOTA</h2>
+        <a href="#">View Cars</a>
+      </div>
+
+      <div class="section-text" id="suzuki">
+        <h2>SUZUKI</h2>
+        <a href="#">View Cars</a>
+      </div>
+    </div>
+
+    <!-- css position -->
+
+    <div class="static">
+      <h2>static</h2>
+    </div>
+
+    <h2 class="relative1">Relative1</h2>
+    <h2 class="relative2">Relative2</h2>
+
+    <!-- absolute no parent -->
+
+    <div class="absolute1">
+      <h2>Absolute 1 no parent</h2>
+    </div>
+
+    <!-- absolute with parent -->
+    <div class="parent-absolute2">
+      <h2>Parent of absolute 2</h2>
+      <div class="child-absolute2">
+        <h2>Absolute2 with parent</h2>
+      </div>
+    </div>
+
+    <div class="fixed"><h2>fixed</h2></div>
+
+    <!-- Semantic tags  (grouping)-->
+    <header></header>
+
+    <nav></nav>
+
+    <section></section>
+
+    <article></article>
+
+    <aside></aside>
+
+    <footer></footer>
+  </body>
+</html>

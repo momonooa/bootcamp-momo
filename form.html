@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="https://kredo.jp/" method="get">
+      <!-- 通常は　method ＝post　を使う プライバシー保護のため-->
+
+      <!-- text input -->
+      <label for="FullName">FullName:</label>
+      <input
+        type="text"
+        name="Fullname"
+        　
+        placeholder="Last Name, First Name"
+        id="FullName"
+        minlength="6"
+        required
+        maxlength=""
+      />
+
+      <!-- for と id　は同じ文字を入れる　(optional) -->
+      <label for="Email">Email</label>
+      <input type="Email" name="Email" id="Email" placeholder="@gmail.com" />
+
+      <label for="Password">Password</label>
+      <input
+        type="password"
+        name="password"
+        placeholder="password"
+        id="Password"
+      />
+      <label for="age">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        placeholder="your age"
+        min="18"
+      />
+
+      <label for="birthday">Birthday</label>
+      <input type="date" name="birthday" id=" birthday" />
+
+      <!-- Radio button -->
+      <div>
+        <p>Your Gender</p>
+        <input type="radio" name="gender" value="male" id="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" value="female" id="female" />
+        <label for="female">Female</label>
+
+        <input type="radio" name="gender" value="other" id="other" />
+        <label for="other">Other</label>
+      </div>
+
+      <!-- check box -->
+      <div>
+        <p>Your Brand Car</p>
+        <input type="checkbox" name="car" value="toyota" id="toyota" />
+        <label for="toyota">Toyota</label>
+
+        <input type="checkbox" name="car" value="suzuki" id="suzuki" />
+        <label for="suzuki">Suzuki</label>
+
+        <input type="checkbox" name="car" value="ford" id="ford" />
+        <label for="ford">Ford</label>
+      </div>
+
+      <!-- Dropdown list box -->
+      <br /><br />
+      <label for="phone">Your Smart Phone</label>
+      <select name="phone" id="phone">
+        <option value="" hidden>Select Phone</option>
+        <option value="iphone">iPhone</option>
+        <option value="samsung">Samsung</option>
+        <option value="xiaomi">Xiaomi</option>
+      </select>
+
+      <!-- Text Area -->
+      <br />
+      <label for="comment">Comment</label>
+      <textarea
+        name="comment"
+        id="comment"
+        cols="30"
+        rows="10"
+        placeholder="Your comment here"
+      ></textarea>
+      <!-- Buttons -->
+      <br /><br />
+      <input type="submit" value="Send" />
+      <input type="image" img src="assets/images/submit.png" height="50px" />
+      <button type="submit" name="send">Send</button>
+      <!-- value=ボタンに表れる文字  -->
+
+      <!-- Form Validation 
+
+        Attribute
+                for characters only
+                reqired- this is important
+                minlength- check minimum characters
+                maxlength- max characters to input
+
+                for numbers only
+                mix-must be greater than or equal to minimum value
+                max
+            -->
+    </form>
+  </body>
+</html>

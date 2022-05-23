@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap");
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif; */
+/* presets/custom setting */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+/* .outline { 
+  height: 100px;
+  width: 100px;
+  border: 5px solid red;
+  outline: 5px solid yellow;
+}
+*/
+
+.nav {
+  border: 5px solid red;
+  width: 85%;
+  overflow: auto;
+  margin: 1em auto;
+}
+
+.nav h1 a {
+  float: left;
+  /* border: 3px solid green; */
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: gray;
+}
+.nav ul {
+  /* clear: left; */
+  float: right;
+  /* border: 3px dashed blue; */
+  margin: 1em auto;
+}
+
+.nav ul li {
+  display: inline-block;
+}
+
+.nav ul li a {
+  margin-left: 1em;
+  /* border: 3px dashed darkgreen; */
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: gray;
+}
+
+/* section */
+.section {
+  clear: both;
+}
+.section {
+  border: 5px solid blue;
+  overflow: auto;
+}
+.section-text {
+  border: 3px dashed darkgreen;
+  height: 500px;
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+  text-align: center;
+}
+.section-text:nth-child(2) {
+  margin-right: 0;
+}
+
+.section-text h2 {
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+/* display
+
+inline =  accept only left and right
+block= cover whole width=accept margin all side
+inine-block= accept all  will not cover whole with
+*/
+
+.section-text a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: antiquewhite;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1px;
+  padding: 1em;
+  display: inline-block;
+  margin-top: 10px;
+}
+#toyota {
+  background-image: url(../images/toyotacar.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#suzuki {
+  background-image: url(../images/suzukicar.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* cee posision */
+
+/* static */
+.static {
+  background-color: red;
+  color: antiquewhite;
+  text-align: center;
+  height: 100px;
+  margin-top: 2em;
+  left: 100px; /* not supported */
+}
+
+/* relative */
+.relative1 {
+  background-color: yellow;
+  height: 300px;
+  width: 45%;
+  position: relative;
+
+  left: 4%;
+}
+
+.relative2 {
+  background-color: blueviolet;
+  height: 300px;
+  width: 45%;
+  position: relative;
+  bottom: 300px;
+  left: 51%;
+  z-index: 1;
+}
+
+/* absolute no parent
+
+will move around the screen*/
+
+.absolute1 {
+  background-color: aqua;
+  height: 200px;
+  width: 20%;
+  position: absolute;
+  right: 20px;
+  left: 225px;
+  z-index: 3;
+}
+
+.parent-absolute2 {
+  background-color: green;
+  height: 300px;
+  width: 45%;
+  position: relative;
+}
+
+.child-absolute2 {
+  background-color: orange;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.fixed {
+  background-color: chocolate;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+  z-index: 2;
+}
+/* z index */
+/* 
+.relative2 {
+  z-index: 1;
+}
+
+.fixed {
+  z-index: 2;
+}
+
+.absolute1 {
+  z-index: 3;
+} */

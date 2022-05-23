@@ -1,0 +1,52 @@
+.toyota {
+  width: 500px;
+}
+.suzuki {
+  width: 100%;
+}
+
+/* CSS back ground img */
+
+.container1 {
+  background-color: aqua;
+  height: 300px;
+  width: 300px;
+  background-image: url(../images/toyotacar.jpg);
+  background-size: cover; /* 1st value=width
+2nd= height contain/cover */
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rebeccapurple;
+  overflow: auto;
+  /* hidden/scroll/auto*/
+  background-attachment: fixed;
+  /* scroll/fixed */
+}
+/* css tables */
+
+table {
+  width: 500px;
+  border-collapse: separate;
+  /* separate(defaut)/collapse */
+  empty-cells: hide;
+  /* separateの時だけhidedできる */
+}
+
+table tr th {
+  background-color: gray;
+}
+
+table tr td {
+  background-color: blanchedalmond;
+}
+
+/* border spacing 
+1st-horizontal
+2nd-vertival
+
+if one value only-both hori and ver will be ajusted
+
+*/
+table {
+  border-spacing: 15px;
+}

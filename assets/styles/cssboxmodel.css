@@ -1,0 +1,39 @@
+/* box model */
+.box1 {
+  background-color: gray;
+  height: 100px;
+  width: 100px;
+  /* border-width: 5px;
+  border-style: solid;
+  border-color: yellow; */
+  border: 5px solid yellow;
+}
+.box2 {
+  background-color: gray;
+  height: 100px;
+  width: 100px;
+  border: 5px solid yellow;
+  padding-left: 100px;
+  padding-top: 100px;
+  margin-top: 200px;
+  margin-left: 200px;
+}
+.border {
+  border: 5px dashed aqua;
+  border-radius: 50px;
+
+  height: 100px;
+  width: 100px;
+}
+
+.border1 {
+  height: 100px;
+  width: 100px;
+}
+
+.boxshadow {
+  border: 1px solod black;
+  box-shadow: 10px 15px 1px red;
+}
+
+/*  */
